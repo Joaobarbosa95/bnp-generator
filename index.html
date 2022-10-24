@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <!-- Select app folder -->
+    <div>
+        <button id="select-folder">Select Folder</button>
+    </div>
+
+    <!-- Select app layouts -->
+    <div>
+    <label for="layouts">Pick a layout:</label>
+    <select id="layouts">
+        <option value="boxed">Boxed</option>
+        <option value="boxed_avatar">Boxed Avatar</option>
+    </select>
+    </div>
+
+    <!-- Select device -->
+    <div>
+    <label for="device">Pick a device:</label>
+    <select id="device">
+        <option value="desktop">Desktop</option>
+        <option value="tablet">Tablet</option>
+        <option value="mobile">Mobile</option>
+    </select>
+    </div>
+
+    <!-- Select screen orientation -->
+    <div>
+    <label for="screen orientation">Pick screen orientation:</label>
+    <select id="screen orientation">
+        <option value="vertical">Vertical</option>
+        <option value="horizontal">Horizontal</option>
+    </select>
+    </div>
+
+    <!-- Modules -->
+    <div>
+        <label for="modules">Pick a layout</label>
+        <select id="modules">
+            <option value="screensaver">Screensaver</option>
+            <option value="register">Register</option>
+            <option value="avatar">Avatar</option>
+            <option value="photo">Play Photo</option>
+            <option value="filter">Play Filter</option>
+            <option value="boomerang">Play Boomerang</option>
+            <option value="gif">Play Gif</option>
+            <option value="tap">Play Tap</option>
+            <option value="memory">Play Memory</option>
+            <option value="quiz">Play Quiz</option>
+            <option value="bike-fill">Play Bike Fill</option>
+            <option value="bike-percent">Play Bike Percent</option>
+            <option value="bike-video">Play Bike Video</option>
+            <option value="slot">Play Slot</option>
+            <option value="dice">Play Dice</option>
+            <option value="wheel">Play Wheel</option>
+            <option value="present">Play Present</option>
+            <option value="ranking">Ranking</option>
+            <option value="statistics">Statistics</option>
+            <option value="control">Control</option>
+        </select>
+        <button id="add-module">add</button> 
+    </div>
+    <div id="loaded-modules">
+        <div>Modules: </div>
+    </div>
+
+  </body>
+  <script src="./load-files.js"></script>
+  <script src="./add-modules.js"></script>
+</html>
